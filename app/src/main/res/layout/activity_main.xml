@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="textEnd"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/divBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:onClick="ope"
+        android:text=" ÷"
+        app:layout_constraintBottom_toTopOf="@+id/threeBT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/multBT" />
+
+    <Button
+        android:id="@+id/sevenBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:onClick="getNumber"
+        android:text="7"
+        app:layout_constraintBottom_toTopOf="@+id/deleteBT"
+        app:layout_constraintEnd_toStartOf="@+id/eightBT"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/deleteBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C"
+        app:layout_constraintBaseline_toBaselineOf="@+id/zeroBT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/zeroBT" />
+
+    <Button
+        android:id="@+id/eightBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="getNumber"
+        android:text="8"
+        app:layout_constraintBaseline_toBaselineOf="@+id/sevenBT"
+        app:layout_constraintEnd_toStartOf="@+id/nineBT"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/sevenBT" />
+
+    <Button
+        android:id="@+id/nineBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="getNumber"
+        android:text="9"
+        app:layout_constraintBaseline_toBaselineOf="@+id/eightBT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/eightBT" />
+
+    <Button
+        android:id="@+id/fiveBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:onClick="getNumber"
+        android:text="5"
+        app:layout_constraintBottom_toTopOf="@+id/eightBT"
+        app:layout_constraintEnd_toStartOf="@+id/sixBT"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/fourBT" />
+
+    <Button
+        android:id="@+id/oneBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="getNumber"
+        android:text="1"
+        app:layout_constraintBaseline_toBaselineOf="@+id/twoBT"
+        app:layout_constraintEnd_toStartOf="@+id/twoBT"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/fourBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="getNumber"
+        android:text="4"
+        app:layout_constraintBaseline_toBaselineOf="@+id/fiveBT"
+        app:layout_constraintEnd_toStartOf="@+id/fiveBT"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/twoBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:onClick="getNumber"
+        android:text="2"
+        app:layout_constraintBottom_toTopOf="@+id/fiveBT"
+        app:layout_constraintEnd_toStartOf="@+id/threeBT"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/oneBT" />
+
+    <Button
+        android:id="@+id/equalBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="104dp"
+        android:text="="
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/zeroBT"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/restBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="ope"
+        android:text="-"
+        app:layout_constraintBaseline_toBaselineOf="@+id/multBT"
+        app:layout_constraintEnd_toStartOf="@+id/multBT"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/sumBT" />
+
+    <Button
+        android:id="@+id/sixBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="getNumber"
+        android:text="6"
+        app:layout_constraintBaseline_toBaselineOf="@+id/fiveBT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/fiveBT" />
+
+    <Button
+        android:id="@+id/zeroBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="getNumber"
+        android:text="0"
+        app:layout_constraintBaseline_toBaselineOf="@+id/equalBT"
+        app:layout_constraintEnd_toStartOf="@+id/deleteBT"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/equalBT" />
+
+    <Button
+        android:id="@+id/threeBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="getNumber"
+        android:text="3"
+        app:layout_constraintBaseline_toBaselineOf="@+id/twoBT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/twoBT" />
+
+    <Button
+        android:id="@+id/sumBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="ope"
+        android:text="+"
+        app:layout_constraintBaseline_toBaselineOf="@+id/restBT"
+        app:layout_constraintEnd_toStartOf="@+id/restBT"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/multBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="ope"
+        android:text="x"
+        app:layout_constraintBaseline_toBaselineOf="@+id/divBT"
+        app:layout_constraintEnd_toStartOf="@+id/divBT"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/restBT" />
+
+    <TextView
+        android:id="@+id/num1Txtview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="16dp"
+        android:hint="0.0"
+        android:textAlignment="textEnd"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/num2Txtview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="16dp"
+        android:hint="0.0"
+        android:textAlignment="textEnd"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/num1Txtview"
+        tools:ignore="TouchTargetSizeCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
